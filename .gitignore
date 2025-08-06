@@ -1,0 +1,41 @@
+# Ignora arquivos de configuração do GoLand
+.idea/
+*.iml
+
+# Ignora arquivos de dependências do Go
+vendor/
+
+# Ignora arquivos de build
+/app
+bin/
+
+# Ignora arquivos de teste
+*.test
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos de ambiente
+.env
+
+# Ignora pasta do Google Cloud SDK
+gcloud*
+google-cloud-sdk/
+**/google-cloud-sdk/
+
+# Ignora arquivos de autenticação do Google Cloud
+*.json
+!go.mod
+!go.sum
+
+# Ignora arquivos temporários
+*.tmp
+*.temp
+
+# Ignora arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de coverage
+coverage.out
+*.cover
