@@ -4,38 +4,63 @@
 
 # Ignora arquivos de dependências do Go
 vendor/
+go.work
+go.work.sum
 
 # Ignora arquivos de build
 /app
 bin/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
 # Ignora arquivos de teste
 *.test
+*.out
 
 # Ignora arquivos de log
 *.log
 
 # Ignora arquivos de ambiente
 .env
+.env.local
+.env.*.local
 
 # Ignora pasta do Google Cloud SDK
 gcloud*
 google-cloud-sdk/
 **/google-cloud-sdk/
+.gcloud/
 
 # Ignora arquivos de autenticação do Google Cloud
-*.json
+*-key.json
+service-account*.json
+gcp-*.json
 !go.mod
 !go.sum
 
 # Ignora arquivos temporários
 *.tmp
 *.temp
+*.swp
+*.swo
 
 # Ignora arquivos do sistema operacional
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Ignora arquivos de coverage
 coverage.out
 *.cover
+coverage.html
+
+# Ignora arquivos Docker
+.dockerignore.bak

@@ -263,6 +263,9 @@ Esta aplicação utiliza duas APIs gratuitas:
 - **Dockerfile**: Configuração para containerização
 - **docker-compose.yml**: Orquestração de containers para desenvolvimento
 - **test.sh**: Script para execução de testes
+- **Makefile**: Comandos úteis para desenvolvimento
+- **.gitignore**: Configuração para ignorar arquivos desnecessários
+- **.github/workflows/ci.yml**: Pipeline de CI/CD
 - **Estruturas**: `CEPData`, `WeatherData`, `ErrorResponse`
 - **Handlers**: `weatherByCEPHandler` para processar requisições GET
 - **Validação**: Função `isValidCEP` para validar formato do CEP
